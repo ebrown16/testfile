@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      JavaScript 6th Edition
+      Chapter 3
+      Hands-on Project 3-3
+
+      Author: 
+      Date:   
+
+      Filename: index.htm
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Hands-on Project 3-6</title>
+   <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+   <div id="container">
+      <header>
+         <h1>
+            <img src="https://cdn.gomix.com/0b168b5a-ff42-4dc7-8200-4a5a1bd4d10b%2FHolloway.PNG" width="319" height="118" alt="Holloway Hall" title="" />
+            <span>Student Profile</span>
+         </h1>
+      </header> 
+   </div>
+      
+   <article>
+      <h2>Student Details</h2>
+      <form>
+         <fieldset class="text">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" />         
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" />
+         </fieldset>
+		   <br>
+           <fieldset class = "standing">
+                 <legend><span>Class Standing</span></legend>	
+            <input type="radio"  value="Freshman" name = "classStanding"/>Freshman<br/><br/>
+            <input type="radio"  value="Sophomore" name = "classStanding"/>Sophomore<br/><br/>
+            <input type="radio"  value="Junior" name = "classStanding"/>Junior<br/><br/>
+            <input type="radio"  value="Senior" name = "classStanding"/>Senior<br/><br/> 			
+           </fieldset>
+           <br>
+           <fieldset class="checks">
+              <legend><span>Preferences</span></legend>
+              <input type="checkbox" id="tuition" value="In-State"/>
+              <label for="tuition" id="tuitionLabel">In-State Tuition</label>
+              <input type="checkbox" id="housing" value="On-Campus"/>
+              <label for="housing" id="housingLabel">On-Campus Housing</label>
+              <input type="checkbox" id="finAid" value="receives financial aid"/>
+              <label for="finAid" id="finAidLabel">Financial Aid</label>
+           </fieldset>
+           <input type="button" id="createBtn" value="Create Profile" />
+      </form>
+      <section id="profile">
+         <h4>Student Profile</h4>
+         <div id="studentNameSection">
+            <ul id = "studentName">Student: </ul>
+			      <ul id = "classYear">Year: </ul>
+         </div>
+  
+         <div id="preferencesSection">
+            <h4>Profile Preferences</h4>
+            <ul id="tuitionPreference">Tuition: </ul>
+            <ul id="housingPreference">Housing: </ul>
+            <ul id="finAidPreference">Assistance: </ul>		   
+         </div>
+      </section>
+   </article>
+   <footer><p>Salisbury University&bull; Salisbury, MD</p></footer>
+   <script src="profile3.js"></script>
+</body>
+</html>
